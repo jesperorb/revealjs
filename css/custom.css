@@ -1,0 +1,93 @@
+html{
+  line-height: 1.5;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 16px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 0px #c1c1c1;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 24px;
+  width: 32px;
+  background: hsla(0, 30%, 70%,1);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+  box-shadow: 3px 3px 0px #c1c1c1;
+}
+
+
+#old-school{
+  font-family: "Classic Console", monospace;
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+
+}
+
+.reveal .line15{
+  line-height: 2;
+}
+
+.reveal .white{
+  color: #fff;
+}
+
+.reveal .sans-serif{
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.reveal .link-hover:hover{
+  background: #222;
+}
+
+.reveal .bb{
+  background: #222;
+  padding: 5px;
+}
+.controls button{
+  outline: none;
+}
+.reveal .slides section .fragment.highlight-red.visible {
+  color: white;
+  background: #222;
+  padding: 10px;
+}
+.reveal .slides section .fragment.highlight-green.visible {
+  color: hsl(160, 55% , 40%)
+}
+
+
+.reveal .big-font{
+  font-size: 2rem;
+}
+
+.reveal blockquote{
+  padding: 1em;
+  line-height: 2;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  background: rgba(0,0,0, 0.2);
+  box-shadow: 1px 1px 0px hsl(170, 44%, 35%),
+           2px 2px 0px hsl(170, 44%, 35%),
+           3px 3px 0px hsl(170, 44%, 35%),
+           4px 4px 0px hsl(170, 44%, 35%),
+           5px 5px 0px hsl(170, 44%, 35%);
+
+}
+
+.reveal .rc{
+  -webkit-border-radius: 7px;
+}
