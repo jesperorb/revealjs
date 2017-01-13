@@ -45,6 +45,20 @@ section.has-light-background {
 	}
 }
 
+.reveal pre {
+	border-radius: 4px;
+}
+
+.reveal pre code {
+	border-radius: 4px;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.reveal strong{
+	background-color: #333;
+	padding: 5px;
+}
 
 // Theme template ------------------------------
 @import "../template/theme";
