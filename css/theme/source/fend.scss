@@ -45,13 +45,37 @@ section.has-light-background {
 	}
 }
 
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+// 
+
+// Custom Settings
+
+.reveal blockquote{
+  padding: 1em;
+  line-height: 2;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  background: rgba(0,0,0, 0.3);
+  box-shadow: 1px 1px 0px hsl(170, 20%, 20%),
+           2px 2px 0px hsl(170, 20%, 20%),
+           3px 3px 0px hsl(170, 20%, 20%),
+           4px 4px 0px hsl(170, 20%, 20%),
+           5px 5px 0px hsl(170, 20%, 20%),
+           6px 6px 0px hsl(170, 20%, 20%),
+           7px 7px 0px hsl(170, 20%, 20%);
+
+}
+
 .reveal pre {
 	border-radius: 4px;
 }
 
 .reveal pre code {
 	border-radius: 4px;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	line-height: 1.5;
 }
 
@@ -59,7 +83,3 @@ section.has-light-background {
 	background-color: #333;
 	padding: 5px;
 }
-
-// Theme template ------------------------------
-@import "../template/theme";
-// ---------------------------------------------
