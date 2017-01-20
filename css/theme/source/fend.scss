@@ -17,7 +17,10 @@
 
 // Override theme settings (see ../template/settings.scss)
 
-$backgroundColor: hsl(170, 44%, 42%);
+$backgroundColor: #509B8C;
+$backupBlue: #31779B;
+$backupRed: #812930;
+$backupYellow: #D6D36F;
 
 $mainColor: #fff;
 $headingColor: #fff;
@@ -29,8 +32,8 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor: #fff;
-$linkColorHover: darken( $linkColor, 15% );
+$linkColor: #CE5660;
+$linkColorHover: darken( $linkColor, 5% );
 $selectionBackgroundColor: darken( $linkColor, 25% );
 
 
@@ -58,19 +61,20 @@ section.has-light-background {
   line-height: 2;
   -webkit-border-radius: 7px;
   border-radius: 7px;
-  background: rgba(0,0,0, 0.3);
-  box-shadow: 1px 1px 0px hsl(170, 20%, 20%),
-           2px 2px 0px hsl(170, 20%, 20%),
-           3px 3px 0px hsl(170, 20%, 20%),
-           4px 4px 0px hsl(170, 20%, 20%),
-           5px 5px 0px hsl(170, 20%, 20%),
-           6px 6px 0px hsl(170, 20%, 20%),
-           7px 7px 0px hsl(170, 20%, 20%);
+  background: darken($backgroundColor, 5%);
+  box-shadow: 1px 1px 0px darken($backgroundColor, 20%),
+           2px 2px 0px darken($backgroundColor, 20%),
+           3px 3px 0px darken($backgroundColor, 20%),
+           4px 4px 0px darken($backgroundColor, 20%),
+           5px 5px 0px darken($backgroundColor, 20%),
+           6px 6px 0px darken($backgroundColor, 20%),
+           7px 7px 0px darken($backgroundColor, 20%);
 
 }
 
 .reveal pre {
 	border-radius: 4px;
+  box-shadow: none;
 }
 
 .reveal pre code {
@@ -81,5 +85,11 @@ section.has-light-background {
 
 .reveal strong{
 	background-color: #333;
-	padding: 5px;
+	padding: 0px 10px 0px 10px;
+}
+
+.reveal em{
+  background-color: #D6D36F;
+  color: #333;
+  padding: 0px 10px 0px 5px;
 }
