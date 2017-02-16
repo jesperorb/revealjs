@@ -21,7 +21,7 @@ body {
   background-color: #3c9a8b; }
 
 .reveal {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   font-size: 36px;
   font-weight: normal;
   color: #fff; }
@@ -47,7 +47,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   font-weight: normal;
   line-height: 2;
   letter-spacing: normal;

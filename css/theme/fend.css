@@ -4,6 +4,7 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../lib/font/lora/lora.css);
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -15,7 +16,7 @@ body {
   background-color: #509B8C; }
 
 .reveal {
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Lora", serif;
   font-size: 38px;
   font-weight: normal;
   color: #fff; }
@@ -41,7 +42,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #fff;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Lora", serif;
   font-weight: 600;
   line-height: 2;
   letter-spacing: normal;
@@ -310,4 +311,12 @@ body {
 .reveal em {
   background-color: #D6D36F;
   color: #333;
-  padding: 0px 10px 0px 5px; }
+  padding: 0px 10px 0px 5px;
+  font-style: normal; }
+
+.reveal .reference {
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  bottom: -100;
+  left: -100; }
