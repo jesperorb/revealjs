@@ -1,0 +1,95 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../lib/font/source-sans-pro/opensans.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 38px;
+$mainFont: 'Open Sans', Helvetica, sans-serif;
+$headingFont: 'Open Sans', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #395c6b;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+.reveal pre {
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.reveal pre code {
+  border-radius: 4px;
+  font-size: 2rem;
+  line-height: 1.5;
+  border: 1px solid #EADFDF;
+  box-shadow: 0px 0px 100px rgba(0,0,0,0.1);
+}
+
+
+.reveal section img{
+  border-radius: 10px; 
+  max-height: 500px; 
+  box-shadow: 0 0 100px rgba(0,0,0,0.1);
+}
+
+
+.reveal strong{
+  background-color: #90708c; 
+  color: #fff;
+  font-style: normal;
+  padding: 0px 10px 0px 10px;
+}
+
+.reveal em{
+  background-color: #395c6b; //blue
+  color: #EADFDF;
+  font-style: normal;
+  padding: 0px 10px 0px 5px;
+  
+}
+
+.reveal .reference{
+  font-size: 1rem;
+  color: #222;
+  position: absolute;
+  bottom: -100;
+  left: 0;
+}
