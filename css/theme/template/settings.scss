@@ -2,21 +2,21 @@
 // overridden by the super-theme
 
 // Background of the presentation
-$backgroundColor: hsl(170, 44%, 42%);
+$backgroundColor: #2b2b2b;
 
 // Primary/body text
-$mainFont: 'Lora', serif;
-$mainFontSize: 36px;
-$mainColor: #fff;
+$mainFont: 'Lato', sans-serif;
+$mainFontSize: 40px;
+$mainColor: #eee;
 
 // Vertical spacing between blocks of text
 $blockMargin: 20px;
 
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
-$headingFont: 'Lora', serif;
-$headingColor: #fff;
-$headingLineHeight: 2;
+$headingFont: 'League Gothic', Impact, sans-serif;
+$headingColor: #eee;
+$headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingTextShadow: none;
@@ -29,8 +29,8 @@ $heading3Size: 1.55em;
 $heading4Size: 1.00em;
 
 // Links and actions
-$linkColor: #fff;
-$linkColorHover: darken( $linkColor, 20% );
+$linkColor: #13DAEC;
+$linkColorHover: lighten( $linkColor, 20% );
 
 // Text selection
 $selectionBackgroundColor: #FF5E99;
