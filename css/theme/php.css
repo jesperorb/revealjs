@@ -4,7 +4,7 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
-@import url(../../lib/font/source-sans-pro/opensans.css);
+@import url(../../lib/font/opensans/opensans.css);
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
 
@@ -321,3 +321,28 @@ body {
   position: absolute;
   bottom: -100;
   left: 0; }
+
+.reveal table, td, tr, th {
+  text-align: left;
+  border: 2px solid #444;
+  color: #444;
+  font: 100%/1.5 monospace; }
+
+.reveal th {
+  background-color: #645264;
+  color: #fff;
+  border-right: 2px solid #fff; }
+
+.reveal th:last-of-type {
+  border-right: 2px solid #444; }
+
+.reveal td {
+  border: 2px solid #444; }
+
+.reveal table {
+  margin-bottom: 3rem; }
+
+.reveal .slides section .fragment.highlight-red.visible {
+  background: #f0ad4e;
+  color: white;
+  border-radius: 4px; }
