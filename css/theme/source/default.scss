@@ -1,0 +1,113 @@
+/**
+ * Custom Theme
+ *
+ * @jesperorb
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+
+//Ubuntu 400, 400 italic, 700 and 700 italic
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i);
+
+//T H E M E SETTINGS
+$backgroundColor: #fff;
+$purple: #90708c;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFont: 'Ubuntu', sans-serif;
+$headingFont: 'Ubuntu', sans-serif;
+$headingTextShadow: 0 1px 2px rgba(0,0,0, 0.1);
+$headingLetterSpacing: 0.4rem;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor:  $purple; //#395c6b;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal section img{
+  border-radius: 10px; 
+  max-height: 500px; 
+  border: none;
+  box-shadow: 0 5 100px rgba(0,0,0,0.1);
+}
+
+.reveal pre {
+  border-radius: 10px;
+  box-shadow: 0 5px 100px rgba(0,0,0,0.1);
+}
+
+.reveal pre code {
+  overflow: visible;
+  padding: 0;
+  font-size: 1.5rem;
+  text-shadow: none;
+  max-height: 600px;
+  
+}
+
+.reveal strong{
+  display: inline-block;
+  background-color: $purple; 
+  color: #fff;
+  font-style: normal;
+  padding: 5px 10px;
+}
+
+.reveal h1 strong {
+  display: inline-block;
+  background-color: $purple; 
+  color: #fff;
+  font-style: normal;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 0 darken($purple,10%),
+              2px 2px 0 darken($purple,10%),
+            3px 3px 0 darken($purple,10%),
+          4px 4px 0 darken($purple,10%);
+}
+
+.reveal em{
+  display: inline-block;
+  background-color: #395c6b; //blue
+  color: #fff;
+  font-style: normal;
+  padding: 5px 10px;
+  
+}
+
+.reveal .reference{
+  font-size: 1rem;
+  color: #222;
+  position: absolute;
+  bottom: -100;
+  left: 0;
+}
+
+.reveal p {
+  line-height: 1.5;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
