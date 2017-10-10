@@ -330,6 +330,9 @@ body {
   font-style: normal;
   padding: 5px 10px; }
 
+.reveal em, .reveal strong {
+  border-radius: 4px; }
+
 .reveal .reference {
   font-size: 1rem;
   color: #222;

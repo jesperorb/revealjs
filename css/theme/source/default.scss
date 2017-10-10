@@ -96,7 +96,10 @@ section.has-dark-background {
   color: #fff;
   font-style: normal;
   padding: 5px 10px;
-  
+}
+
+.reveal em, .reveal strong{
+  border-radius: 4px;
 }
 
 .reveal .reference{
