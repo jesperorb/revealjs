@@ -51,7 +51,9 @@ var LiveCoding = (function() {
 			for (var i = 0; i < cssRules.length - 1; i+=4) {
 				var selectors = cssRules[i].split(',');
 				for (var j = 0; j < selectors.length; j++) {
-					selectors[j] = '#' + demoElementId + ' ' + selectors[j];
+					if(selectors[j].substr(0,1) === "." || selectors[j].substr(0,1) === "#"){
+						selectors[j] = '#' + demoElementId + ' ' + selectors[j];	
+					}
 				}
 				cssRules[i] = selectors.join(',');
 			}
