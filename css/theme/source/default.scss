@@ -14,22 +14,23 @@
 // Include theme-specific fonts
 
 //Ubuntu 400, 400 italic, 700 and 700 italic
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700);
 
 //T H E M E SETTINGS
 $backgroundColor: #fff;
-$purple: #90708c;
+$strongColor: #c22a5d;
+$emColor: #6C9986; 
 
 $mainColor: #222;
 $headingColor: #222;
 
-$mainFont: 'Ubuntu', sans-serif;
-$headingFont: 'Ubuntu', sans-serif;
-$headingTextShadow: 0 1px 2px rgba(0,0,0, 0.1);
+$mainFont: 'Roboto Mono', monospace;
+$headingFont: 'Roboto Mono', monospace;
+$headingTextShadow: 0 1px 2px rgba(0,0,0, 0.0);
 $headingLetterSpacing: 0.4rem;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor:  $purple; //#395c6b;
+$linkColor:  $strongColor; //#395c6b;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -72,27 +73,38 @@ section.has-dark-background {
 
 .reveal strong{
   display: inline-block;
-  background-color: $purple; 
+  background-color: $strongColor; 
   color: #fff;
   font-style: normal;
   padding: 5px 10px;
 }
 
+.reveal h1 em {
+  padding: 2rem;
+}
+
 .reveal h1 strong {
+  color: red;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-gradient(linear,left top,right top,from(#f79533),color-stop(15%,#f79533),color-stop(30%,#ef4e7b),color-stop(44%,#a166ab),color-stop(72%,#1098ad),color-stop(86%,#07b39b),to(#07b39b));
+  background: linear-gradient(90deg,#f79533,#f79533 15%,#ef4e7b 30%,#a166ab 44%,#1098ad 72%,#07b39b 86%,#07b39b);
+  background: -o-linear-gradient(transparent,transparent);
+  -webkit-background-clip: text;
+  font-size: 6rem;
+  font-weight: bolder;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  cursor: pointer;
+  position: relative;
   display: inline-block;
-  background-color: $purple; 
-  color: #fff;
-  font-style: normal;
-  padding: 5px 10px;
-  box-shadow: 1px 1px 0 darken($purple,10%),
-              2px 2px 0 darken($purple,10%),
-            3px 3px 0 darken($purple,10%),
-          4px 4px 0 darken($purple,10%);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  text-shadow: 0px 0px 4px rgba(100,100,100, 0.1);
 }
 
 .reveal em{
   display: inline-block;
-  background-color: #395c6b; //blue
+  background-color:$emColor; //blue
   color: #fff;
   font-style: normal;
   padding: 5px 10px;
@@ -112,5 +124,33 @@ section.has-dark-background {
 
 .reveal p {
   line-height: 1.5;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  /*text-shadow: 0 1px 0 rgba(0,0,0,0.2);*/
+}
+
+.reveal section img {
+  background: none;
+  box-shadow: none;
+}
+.reveal .two-columns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reveal .two-columns > pre {
+  flex: 2;
+}
+
+.reveal .two-columns > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.reveal .two-columns > div > * {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  padding: 1rem;
 }
